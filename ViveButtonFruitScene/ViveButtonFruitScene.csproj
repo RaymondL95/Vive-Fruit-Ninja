@@ -463,6 +463,8 @@
     <Compile Include="Assets\Asset Store\VRTK\Scripts\Utilities\VRTK_SharedMethods.cs" />
     <Compile Include="Assets\Asset Store\VRTK\Scripts\Utilities\VRTK_Simulator.cs" />
     <Compile Include="Assets\Scripts\CameraToMirror.cs" />
+    <Compile Include="Assets\Scripts\DestroyFruit.cs" />
+    <Compile Include="Assets\Scripts\Developer Inputs\Inputs.cs" />
     <Compile Include="Assets\Scripts\DisableOnStart.cs" />
     <Compile Include="Assets\Scripts\FPSDisplay.cs" />
     <Compile Include="Assets\Scripts\Flying.cs" />
