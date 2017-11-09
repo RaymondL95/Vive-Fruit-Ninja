@@ -11,6 +11,8 @@ public class SwordCutter : MonoBehaviour {
     public Material capMaterial;
     int slicecount = 0;
     bool haveSpecialAbility = false;
+    bool usingSpecialAbility = false;
+    [SerializeField] private GameObject Sphere;
     private void Awake()
     {
         slider.onValueChanged.AddListener(delegate { OnFruitSliced(); });
@@ -19,14 +21,7 @@ public class SwordCutter : MonoBehaviour {
     {
         slider.onValueChanged.RemoveListener(delegate { OnFruitSliced(); });
     }
-    void OnFruitSliced()
-    {
-        Debug.Log(slider.value);
-        if (slider.value == 1)
-        {
-            haveSpecialAbility = true;
-        }
-    }
+
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Collision");
@@ -45,9 +40,20 @@ public class SwordCutter : MonoBehaviour {
     }
     void UpdateFruitCount()
     {
-        slicecount++;
-        collisionCounter.text = "Fruits Sliced: " + slicecount;
-        slider.value += .15f;
+        //Increase SLider if sphere is not active.
+        if(usingSpecialAbility == false)
+        {
+            slicecount++;
+            collisionCounter.text = "Fruits Sliced: " + slicecount;
+            slider.value += .15f;
+        }
+    }
+    void OnFruitSliced()
+    {
+        if (slider.value == 1)
+        {
+            haveSpecialAbility = true;
+        }
     }
     private void Update()
     {
@@ -57,10 +63,20 @@ public class SwordCutter : MonoBehaviour {
             {
                 haveSpecialAbility = !haveSpecialAbility;
                 slider.value = 0;
-                
-                Debug.Log("Hello");
+                StartCoroutine(SpawnSphere());
+               // Sphere.SetActive(false);
             }
         }
+    }
+    IEnumerator SpawnSphere()
+    {
+        usingSpecialAbility = true;
+        Sphere.SetActive(true);
+        Debug.Log("Before Wait For Seconds" + usingSpecialAbility);
+        yield return new WaitForSeconds(10f);
+        Sphere.SetActive(false);
+        usingSpecialAbility = false;
+        Debug.Log("after Wait For Seconds" + usingSpecialAbility);
     }
 
     

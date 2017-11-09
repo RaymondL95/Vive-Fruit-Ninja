@@ -20,11 +20,14 @@ public class Suction : MonoBehaviour {
         collision.transform.position = new Vector3(Random.Range(-0.5f,1.0f), 1f, 9f);
           StartCoroutine(UnFreeze(collision));
     }
+    private void  OnCollisionExit(Collision collision)
+    {
+        collision.rigidbody.isKinematic = false;
+        collision.rigidbody.useGravity = true;
+    }
     IEnumerator UnFreeze(Collision collision)
     {
         yield return new WaitForSeconds(10f);
-        collision.rigidbody.isKinematic = false;
-        collision.rigidbody.useGravity = true;
         transform.gameObject.SetActive(false);
         
     }
