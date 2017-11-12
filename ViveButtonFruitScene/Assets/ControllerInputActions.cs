@@ -10,7 +10,12 @@
         int slicecount = 0;
         bool haveSpecialAbility = true;
         bool usingSpecialAbility = true;
+        bool _TriggerIsPressed = false;
+        float fireRate = 0.5F;
+        float nextFire = 0.0F;
 
+        public float TimeToKillSphere;
+        public float TimeToSpawnSphere;
         [SerializeField] private GameObject Sphere;
 
         private void Start()
@@ -20,6 +25,24 @@
                 VRTK_Logger.Error(VRTK_Logger.GetCommonMessage(VRTK_Logger.CommonMessageKeys.REQUIRED_COMPONENT_MISSING_FROM_GAMEOBJECT, "VRTK_ControllerEvents_ListenerExample", "VRTK_ControllerEvents", "the same"));
                 return;
             }
+
+
+            //Undefined - No button specified
+            //TriggerHairline - The trigger is squeezed past the current hairline threshold.
+            //TriggerTouch - The trigger is squeezed a small amount.
+            //TriggerPress - The trigger is squeezed about half way in.
+            //TriggerClick - The trigger is squeezed all the way down.
+            //GripHairline - The grip is squeezed past the current hairline threshold.
+            //GripTouch - The grip button is touched.
+            //GripPress - The grip button is pressed.
+            //GripClick - The grip button is pressed all the way down.
+            //TouchpadTouch - The touchpad is touched (without pressing down to click).
+            //TouchpadPress - The touchpad is pressed(to the point of hearing a click).
+            //ButtonOneTouch - The button one is touched.
+            //ButtonOnePress - The button one is pressed.
+            //ButtonTwoTouch - The button one is touched.
+            //ButtonTwoPress - The button one is pressed.
+            //StartMenuPress - The button one is pressed.
 
             //Setup controller event listeners
             GetComponent<VRTK_ControllerEvents>().TriggerPressed += new ControllerInteractionEventHandler(DoTriggerPressed);
@@ -87,20 +110,37 @@
 
         private void DoTriggerPressed(object sender, ControllerInteractionEventArgs e)
         {
-
+            _TriggerIsPressed = true;
             // Put code here to do stuff ...
 
             //haveSpecialAbility = !haveSpecialAbility;
             //slider.value = 0;
             //StartCoroutine(SpawnSphere());
 
-            float timer = 0f;
-            timer += Time.deltaTime;
 
-            if (timer > 5f)
+
+
+
+            //float timer = 0;
+            //    timer += Time.deltaTime;
+            //    Debug.Log("Timer is " + timer);
+            //    if (timer > 5f)
+            //    {
+            //        haveSpecialAbility = true;
+            //        //SpawnSphere();
+            //        StartCoroutine(SpawnSphereEnumerator());
+            //    }
+            /*
+            float current_time = Time.time;
+            nextFire = current_time;
+
+            if (current_time > nextFire)
             {
+                nextFire = Time.time + fireRate;
+                //GameObject clone = Instantiate(projectile, transform.position, transform.rotation) as GameObject;
                 haveSpecialAbility = true;
                 //SpawnSphere();
+                Debug.Log("Calling SpawnSphereEnumerator " + nextFire);
                 StartCoroutine(SpawnSphereEnumerator());
             }
             else
@@ -110,12 +150,15 @@
 
             Debug.Log("Activating Special Ability!!!!!");
             //DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", " axis changed " + timer, e);
-            DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", "pressed at time ", e);
-
+            DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", "pressed at time " + Time.time, e);
+            */
         }
 
         private void DoTriggerReleased(object sender, ControllerInteractionEventArgs e)
         {
+
+            _TriggerIsPressed = false;
+            haveSpecialAbility = false;
             DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", "released", e);
         }
 
@@ -152,7 +195,7 @@
         private void DoTriggerAxisChanged(object sender, ControllerInteractionEventArgs e)
         {
 
-            DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", "axis changed", e);
+            //DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", "axis changed", e);
         }
 
         private void DoGripPressed(object sender, ControllerInteractionEventArgs e)
@@ -308,6 +351,32 @@
             Instantiate(Sphere, this.transform.position, this.transform.rotation);
             Destroy(Sphere, 10f);
 
+        }
+        private void Update()
+        {
+            if (_TriggerIsPressed)
+            {
+              //  Debug.Log("Trigger pressed received");
+                float current_time = Time.time;
+                nextFire = current_time;
+                Debug.Log(current_time);
+               // if (current_time > nextFire)
+                if(current_time >= 5f)
+                {
+                    Debug.Log("Within if");
+                    nextFire = Time.time + fireRate;
+
+                    //GameObject clone = Instantiate(projectile, transform.position, transform.rotation) as GameObject;
+                    haveSpecialAbility = true;
+                    //SpawnSphere();
+                   // Debug.Log("Calling SpawnSphereEnumerator " + nextFire);
+                    StartCoroutine(SpawnSphereEnumerator());
+                }
+                else
+                {
+                    haveSpecialAbility = false;
+                }
+            }
         }
     }
 
