@@ -339,7 +339,7 @@
             usingSpecialAbility = true;
             Sphere.SetActive(true);
             Debug.Log("Before Wait For Seconds" + usingSpecialAbility);
-            yield return new WaitForSeconds(10f);
+			yield return new WaitForSeconds(TimeToKillSphere);
             Sphere.SetActive(false);
             usingSpecialAbility = false;
             Debug.Log("after Wait For Seconds" + usingSpecialAbility);
@@ -349,7 +349,7 @@
         {
             haveSpecialAbility = true;
             Instantiate(Sphere, this.transform.position, this.transform.rotation);
-            Destroy(Sphere, 10f);
+			Destroy(Sphere, TimeToKillSphere);
 
         }
         private void Update()
@@ -361,10 +361,10 @@
                 nextFire = current_time;
                 Debug.Log(current_time);
                // if (current_time > nextFire)
-                if(current_time >= 5f)
+				if(current_time >= TimeToSpawnSphere)
                 {
                     Debug.Log("Within if");
-                    nextFire = Time.time + fireRate;
+                  //  nextFire = Time.time + fireRate;
 
                     //GameObject clone = Instantiate(projectile, transform.position, transform.rotation) as GameObject;
                     haveSpecialAbility = true;
