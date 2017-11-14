@@ -322,6 +322,7 @@
             Debug.Log(LeftController.GetComponent<SwordCutter>().GetSpecialAbility());
             if(LeftController.GetComponent<SwordCutter>().slider.value == 1f)
             {
+				//We have to check if slider is equal to 1 here again even though swordcutter set to true already
                 LeftController.GetComponent<SwordCutter>().SetSpecialAbility(true);
             }
             if (_TriggerIsPressed && LeftController.GetComponent<SwordCutter>().GetSpecialAbility() )
