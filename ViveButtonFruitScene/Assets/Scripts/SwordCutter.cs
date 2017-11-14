@@ -61,8 +61,15 @@ public class SwordCutter : MonoBehaviour {
     }
     private void Update()
     {
+        Debug.Log(haveSpecialAbility);
 		//Increase slider bar passively
 		slider.value += _PassiveRegen;
+        /*
+        if(slider.value == 1f)
+        {
+            SetSpecialAbility(true);
+        }
+        */
     }
     IEnumerator SpawnSphere()
     {

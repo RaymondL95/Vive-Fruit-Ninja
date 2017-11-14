@@ -316,9 +316,17 @@
         }
         private void Update()
         {
-			//Check if Trigger is pressed and Meter is Full
-			if (_TriggerIsPressed && LeftController.GetComponent<SwordCutter>().GetSpecialAbility())
+            //Check if Trigger is pressed and Meter is Full
+            //  Debug.Log(LeftController.GetComponent<SwordCutter>().GetSpecialAbility());
+            // LeftController.GetComponent<SwordCutter>().SetSpecialAbility(true);
+            Debug.Log(LeftController.GetComponent<SwordCutter>().GetSpecialAbility());
+            if(LeftController.GetComponent<SwordCutter>().slider.value == 1f)
             {
+                LeftController.GetComponent<SwordCutter>().SetSpecialAbility(true);
+            }
+            if (_TriggerIsPressed && LeftController.GetComponent<SwordCutter>().GetSpecialAbility() )
+            {
+
 				LeftController.GetComponent<SwordCutter>().SetSpecialAbility(false);
 				//Use Special Ability then reset slider.
 				LeftController.GetComponent<SwordCutter> ().slider.value = 0f;
