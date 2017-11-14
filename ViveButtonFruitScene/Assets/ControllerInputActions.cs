@@ -8,7 +8,6 @@
     {
 
         int slicecount = 0;
-        bool haveSpecialAbility = true;
         bool usingSpecialAbility = true;
         bool _TriggerIsPressed = false;
         float fireRate = 0.5F;
@@ -16,8 +15,13 @@
 
         public float TimeToKillSphere;
         public float TimeToSpawnSphere;
+		//Gain Access to One of the Controllers to obtain HaveSpecialAbility
+		[SerializeField] private GameObject LeftController;
         [SerializeField] private GameObject Sphere;
-
+		private void Awake(){
+			//LeftController = GetComponent<SwordCutter> ();
+			Debug.Log ("Hello I Am Awake");
+		}
         private void Start()
         {
             if (GetComponent<VRTK_ControllerEvents>() == null)
@@ -111,54 +115,14 @@
         private void DoTriggerPressed(object sender, ControllerInteractionEventArgs e)
         {
             _TriggerIsPressed = true;
-            // Put code here to do stuff ...
-
-            //haveSpecialAbility = !haveSpecialAbility;
-            //slider.value = 0;
-            //StartCoroutine(SpawnSphere());
-
-
-
-
-
-            //float timer = 0;
-            //    timer += Time.deltaTime;
-            //    Debug.Log("Timer is " + timer);
-            //    if (timer > 5f)
-            //    {
-            //        haveSpecialAbility = true;
-            //        //SpawnSphere();
-            //        StartCoroutine(SpawnSphereEnumerator());
-            //    }
-            /*
-            float current_time = Time.time;
-            nextFire = current_time;
-
-            if (current_time > nextFire)
-            {
-                nextFire = Time.time + fireRate;
-                //GameObject clone = Instantiate(projectile, transform.position, transform.rotation) as GameObject;
-                haveSpecialAbility = true;
-                //SpawnSphere();
-                Debug.Log("Calling SpawnSphereEnumerator " + nextFire);
-                StartCoroutine(SpawnSphereEnumerator());
-            }
-            else
-            {
-                haveSpecialAbility = false;
-            }
-
-            Debug.Log("Activating Special Ability!!!!!");
-            //DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", " axis changed " + timer, e);
-            DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", "pressed at time " + Time.time, e);
-            */
         }
 
         private void DoTriggerReleased(object sender, ControllerInteractionEventArgs e)
         {
 
             _TriggerIsPressed = false;
-            haveSpecialAbility = false;
+			LeftController.GetComponent<SwordCutter> ().SetSpecialAbility (false);
+           // haveSpecialAbility = false;
             DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", "released", e);
         }
 
@@ -347,34 +311,27 @@
 
         public void SpawnSphere()
         {
-            haveSpecialAbility = true;
             Instantiate(Sphere, this.transform.position, this.transform.rotation);
 			Destroy(Sphere, TimeToKillSphere);
-
         }
         private void Update()
         {
-            if (_TriggerIsPressed)
+			//Check if Trigger is pressed and Meter is Full
+			if (_TriggerIsPressed && LeftController.GetComponent<SwordCutter>().GetSpecialAbility())
             {
-              //  Debug.Log("Trigger pressed received");
+				LeftController.GetComponent<SwordCutter>().SetSpecialAbility(false);
+				//Use Special Ability then reset slider.
+				LeftController.GetComponent<SwordCutter> ().slider.value = 0f;
+              // If Trigger is Pressed && Meter is Full Count to TimeToSpawnSphere.
                 float current_time = Time.time;
-                nextFire = current_time;
                 Debug.Log(current_time);
-               // if (current_time > nextFire)
 				if(current_time >= TimeToSpawnSphere)
-                {
-                    Debug.Log("Within if");
-                  //  nextFire = Time.time + fireRate;
-
-                    //GameObject clone = Instantiate(projectile, transform.position, transform.rotation) as GameObject;
-                    haveSpecialAbility = true;
-                    //SpawnSphere();
-                   // Debug.Log("Calling SpawnSphereEnumerator " + nextFire);
+				{
                     StartCoroutine(SpawnSphereEnumerator());
                 }
                 else
                 {
-                    haveSpecialAbility = false;
+					LeftController.GetComponent<SwordCutter>().SetSpecialAbility(false);
                 }
             }
         }

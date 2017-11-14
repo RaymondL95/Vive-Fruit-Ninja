@@ -9,13 +9,14 @@ public class SwordCutter : MonoBehaviour {
     public Text collisionCounter;
     public Slider slider;
     public Material capMaterial;
+
     int slicecount = 0;
-    bool haveSpecialAbility = false;
-    bool usingSpecialAbility = false;
-    [SerializeField] private GameObject Sphere;
+    private bool haveSpecialAbility = false;
+	public float _PassiveRegen = 0.001f;
+	bool usingSpecialAbility = false;
+
     private void Awake()
     {
-        slider.onValueChanged.AddListener(delegate { OnFruitSliced(); });
     }
     private void OnDestroy()
     {
@@ -24,7 +25,7 @@ public class SwordCutter : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collision");
+        //Update the Fruit Count
         UpdateFruitCount();
         GameObject victim = collision.collider.gameObject;
 
@@ -40,44 +41,44 @@ public class SwordCutter : MonoBehaviour {
     }
     void UpdateFruitCount()
     {
-        //Increase SLider if sphere is not active.
+        // On Collision Increase Fruit Count
         if(usingSpecialAbility == false)
         {
             slicecount++;
             collisionCounter.text = "Fruits Sliced: " + slicecount;
-            slider.value += .15f;
+            slider.value += .10f;
         }
     }
     void OnFruitSliced()
     {
+		//If a fruit is sliced check meter
+
         if (slider.value == 1)
         {
-            haveSpecialAbility = true;
+			//only have special ability if slider is MAX
+			SetSpecialAbility(true);
         }
     }
     private void Update()
     {
-        if(haveSpecialAbility)
-        {        
-            if (Input.GetKeyDown("space"))
-            {
-                haveSpecialAbility = !haveSpecialAbility;
-                slider.value = 0;
-                StartCoroutine(SpawnSphere());
-               // Sphere.SetActive(false);
-            }
-        }
+		//Increase slider bar passively
+		slider.value += _PassiveRegen;
     }
     IEnumerator SpawnSphere()
     {
         usingSpecialAbility = true;
-        Sphere.SetActive(true);
+      //  Sphere.SetActive(true);
         Debug.Log("Before Wait For Seconds" + usingSpecialAbility);
         yield return new WaitForSeconds(10f);
-        Sphere.SetActive(false);
+     //   Sphere.SetActive(false);
         usingSpecialAbility = false;
         Debug.Log("after Wait For Seconds" + usingSpecialAbility);
     }
-
+	public void SetSpecialAbility(bool x){
+		haveSpecialAbility = x;
+	}
     
+	public bool GetSpecialAbility(){
+		return haveSpecialAbility;
+	}
 }
