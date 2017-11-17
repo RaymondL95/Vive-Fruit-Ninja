@@ -63,7 +63,7 @@ public class SwordCutter : MonoBehaviour {
     {
         Debug.Log(haveSpecialAbility);
 		//Increase slider bar passively
-		slider.value += _PassiveRegen;
+		slider.value += _PassiveRegen * Time.deltaTime;
         
         if(slider.value == 1f)
         {
@@ -81,8 +81,8 @@ public class SwordCutter : MonoBehaviour {
         usingSpecialAbility = false;
         Debug.Log("after Wait For Seconds" + usingSpecialAbility);
     }
-	public void SetSpecialAbility(bool x){
-		haveSpecialAbility = x;
+	public void SetSpecialAbility(bool isSpecial){
+		haveSpecialAbility = isSpecial;
 	}
     
 	public bool GetSpecialAbility(){

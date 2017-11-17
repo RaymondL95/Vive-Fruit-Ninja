@@ -121,7 +121,15 @@
         {
 
             _TriggerIsPressed = false;
-			LeftController.GetComponent<SwordCutter> ().SetSpecialAbility (false);
+            if(LeftController.GetComponent<SwordCutter>() != null)
+            {
+                LeftController.GetComponent<SwordCutter>().SetSpecialAbility(false);
+            }
+            else
+            {
+                Debug.Log("Left controller SwordCutter returns null.");
+            }
+		
            // haveSpecialAbility = false;
             DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", "released", e);
         }
@@ -319,14 +327,24 @@
             //Check if Trigger is pressed and Meter is Full
             //  Debug.Log(LeftController.GetComponent<SwordCutter>().GetSpecialAbility());
             // LeftController.GetComponent<SwordCutter>().SetSpecialAbility(true);
-            Debug.Log(LeftController.GetComponent<SwordCutter>().GetSpecialAbility());
-            if(LeftController.GetComponent<SwordCutter>().slider.value == 1f)
+
+            if(LeftController.GetComponent<SwordCutter>().GetSpecialAbility() == true)
             {
-				//We have to check if slider is equal to 1 here again even though swordcutter set to true already
-                LeftController.GetComponent<SwordCutter>().SetSpecialAbility(true);
+                Debug.Log("Left controller special ability. " + LeftController.GetComponent<SwordCutter>().GetSpecialAbility());
             }
+            //
+
+            //Debug.Log("Right controller special ability. " + RightController.GetComponent<SwordCutter>().GetSpecialAbility());
+
+    //        if (LeftController.GetComponent<SwordCutter>().slider.value == 1f)
+    //        {
+				////We have to check if slider is equal to 1 here again even though swordcutter set to true already
+    //            LeftController.GetComponent<SwordCutter>().SetSpecialAbility(true);
+    //        }
             if (_TriggerIsPressed && LeftController.GetComponent<SwordCutter>().GetSpecialAbility() )
             {
+
+                Debug.Log("This is never called!!");
 
 				LeftController.GetComponent<SwordCutter>().SetSpecialAbility(false);
 				//Use Special Ability then reset slider.
