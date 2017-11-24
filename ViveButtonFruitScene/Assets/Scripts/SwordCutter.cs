@@ -61,7 +61,7 @@ public class SwordCutter : MonoBehaviour {
     }
     private void Update()
     {
-        Debug.Log(haveSpecialAbility);
+       // Debug.Log(haveSpecialAbility);
 		//Increase slider bar passively
 		slider.value += _PassiveRegen * Time.deltaTime;
         
