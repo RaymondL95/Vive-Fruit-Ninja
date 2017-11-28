@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/fruitNinja_dojo2.unity
+- path: Assets/Scenes/fruitNinja_dojo3.unity
   isLoaded: 1
   isActive: 1
