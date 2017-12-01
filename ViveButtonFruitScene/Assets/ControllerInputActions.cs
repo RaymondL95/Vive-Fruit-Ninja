@@ -330,7 +330,7 @@
 
             if(LeftController.GetComponent<SwordCutter>().GetSpecialAbility() == true)
             {
-                Debug.Log("Left controller special ability. " + LeftController.GetComponent<SwordCutter>().GetSpecialAbility());
+               // Debug.Log("Left controller special ability. " + LeftController.GetComponent<SwordCutter>().GetSpecialAbility());
             }
             //
 

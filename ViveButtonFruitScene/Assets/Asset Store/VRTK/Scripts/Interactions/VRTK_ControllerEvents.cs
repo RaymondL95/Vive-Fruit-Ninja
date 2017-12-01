@@ -3,7 +3,7 @@ namespace VRTK
 {
     using UnityEngine;
     using System;
-
+   
     /// <summary>
     /// Event Payload
     /// </summary>
@@ -21,6 +21,7 @@ namespace VRTK
         public Vector2 touchpadAxis;
         public float touchpadAngle;
     }
+
 
     /// <summary>
     /// Event Payload
@@ -64,6 +65,8 @@ namespace VRTK
         /// <param name="ButtonTwoTouch">The button one is touched.</param>
         /// <param name="ButtonTwoPress">The button one is pressed.</param>
         /// <param name="StartMenuPress">The button one is pressed.</param>
+        public GameObject RightControllerTemp;
+
         public enum ButtonAlias
         {
             Undefined,
@@ -640,7 +643,12 @@ namespace VRTK
             if (TouchpadPressed != null)
             {
                 TouchpadPressed(this, e);
+                Debug.Log("Touch Pad Pressed");
+
+                    RightControllerTemp.SetActive(false);
+             
             }
+
         }
 
         public virtual void OnTouchpadReleased(ControllerInteractionEventArgs e)
@@ -648,7 +656,11 @@ namespace VRTK
             if (TouchpadReleased != null)
             {
                 TouchpadReleased(this, e);
+                Debug.Log("Touch Pad Released");
+                
+                    RightControllerTemp.SetActive(true);
             }
+
         }
 
         public virtual void OnTouchpadTouchStart(ControllerInteractionEventArgs e)
