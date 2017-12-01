@@ -46,7 +46,7 @@ public class SwordCutter : MonoBehaviour {
         {
             slicecount++;
             collisionCounter.text = "Fruits Sliced: " + slicecount;
-            slider.value += .10f;
+            slider.value += .03f;
         }
     }
     void OnFruitSliced()

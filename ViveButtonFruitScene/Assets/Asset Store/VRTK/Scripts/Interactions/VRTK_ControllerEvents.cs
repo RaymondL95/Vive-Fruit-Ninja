@@ -708,6 +708,7 @@ namespace VRTK
             if (ButtonOnePressed != null)
             {
                 ButtonOnePressed(this, e);
+                Debug.Log("Button One Pressed!");
             }
         }
 
@@ -724,6 +725,7 @@ namespace VRTK
             if (ButtonTwoTouchStart != null)
             {
                 ButtonTwoTouchStart(this, e);
+                Debug.Log("Button Two Touch Start!");
             }
         }
 
@@ -732,6 +734,7 @@ namespace VRTK
             if (ButtonTwoTouchEnd != null)
             {
                 ButtonTwoTouchEnd(this, e);
+                Debug.Log("Button Two Touch End!");
             }
         }
 
@@ -740,6 +743,7 @@ namespace VRTK
             if (ButtonTwoPressed != null)
             {
                 ButtonTwoPressed(this, e);
+                Debug.Log("Button Two Pressed!");
             }
         }
 
@@ -756,6 +760,7 @@ namespace VRTK
             if (StartMenuPressed != null)
             {
                 StartMenuPressed(this, e);
+                Debug.Log("Start Menu Pressed!");
             }
         }
 
@@ -764,6 +769,7 @@ namespace VRTK
             if (StartMenuReleased != null)
             {
                 StartMenuReleased(this, e);
+                Debug.Log("Start Menu Released!");
             }
         }
 
@@ -854,6 +860,7 @@ namespace VRTK
             if (AliasMenuOn != null)
             {
                 AliasMenuOn(this, e);
+                Debug.Log("Alias Menu On");
             }
         }
 

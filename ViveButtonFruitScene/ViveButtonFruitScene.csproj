@@ -609,6 +609,7 @@
     <Compile Include="Assets\Scripts\Flying.cs" />
     <Compile Include="Assets\Scripts\FollowTransform.cs" />
     <Compile Include="Assets\Scripts\FPSDisplay.cs" />
+    <Compile Include="Assets\Scripts\Front Facing UI\Countdown.cs" />
     <Compile Include="Assets\Scripts\Fruit.cs" />
     <Compile Include="Assets\Scripts\FruitScript.cs" />
     <Compile Include="Assets\Scripts\FruitSpawner.cs" />
@@ -626,6 +627,7 @@
     <Compile Include="Assets\Scripts\Suction\Suction2.cs" />
     <Compile Include="Assets\Scripts\SwordCutter.cs" />
     <Compile Include="Assets\SphereSpawner.cs" />
+    <Compile Include="Assets\UIMenuController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Store\BLINDED_AM_ME package\LICENSE.txt" />
