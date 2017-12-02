@@ -11,7 +11,7 @@ public class Countdown : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float time = (99 - Time.time);
+        int time = (int)(99 - Time.time);
         if (time > 0)
         {
             Countdown1.text = time.ToString();

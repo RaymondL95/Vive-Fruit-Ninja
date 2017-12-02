@@ -45,7 +45,7 @@ public class SwordCutter : MonoBehaviour {
         if(usingSpecialAbility == false)
         {
             slicecount++;
-            collisionCounter.text = "Fruits Sliced: " + slicecount;
+            collisionCounter.text = "Slices: " + slicecount;
             slider.value += .03f;
         }
     }

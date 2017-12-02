@@ -619,12 +619,13 @@
     <Compile Include="Assets\Scripts\MirrorCamera.cs" />
     <Compile Include="Assets\Scripts\NoClipMouseLook.cs" />
     <Compile Include="Assets\Scripts\ObjectManager.cs" />
+    <Compile Include="Assets\Scripts\PowerUp\Pause Time\FreezeTime.cs" />
+    <Compile Include="Assets\Scripts\PowerUp\Suction\ObjectPuller.cs" />
+    <Compile Include="Assets\Scripts\PowerUp\Suction\Suction.cs" />
+    <Compile Include="Assets\Scripts\PowerUp\Suction\Suction2.cs" />
     <Compile Include="Assets\Scripts\pressableButton.cs" />
     <Compile Include="Assets\Scripts\RandomMover.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
-    <Compile Include="Assets\Scripts\Suction\ObjectPuller.cs" />
-    <Compile Include="Assets\Scripts\Suction\Suction.cs" />
-    <Compile Include="Assets\Scripts\Suction\Suction2.cs" />
     <Compile Include="Assets\Scripts\SwordCutter.cs" />
     <Compile Include="Assets\SphereSpawner.cs" />
     <Compile Include="Assets\UIMenuController.cs" />

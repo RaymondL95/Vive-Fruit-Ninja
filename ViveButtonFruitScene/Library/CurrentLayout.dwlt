@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1520
     height: 720
-  m_MinSize: {x: 683, y: 492}
+  m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 97
+  controlID: 9
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -89,8 +89,8 @@ MonoBehaviour:
     y: 0
     width: 294
     height: 379
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -206,10 +206,10 @@ MonoBehaviour:
     y: 0
     width: 1187
     height: 720
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 98
+  controlID: 10
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,10 +230,10 @@ MonoBehaviour:
     y: 0
     width: 1187
     height: 379
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 99
+  controlID: 11
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -325,19 +325,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Front Facing UI
+    - Assets/Scripts/PowerUp/Pause Time
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Front Facing UI
+  - Assets/Scripts/PowerUp/Pause Time
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jumpintothelight5\Documents\GitHub\Vive-Fruit-Ninja\ViveButtonFruitScene
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1041}
-    m_SelectedIDs: c6930000
-    m_LastClickedID: 37830
-    m_ExpandedIDs: 00000000b22a0000822b0000042d0000ae2e0000fe2f000094310000d4320000e63400006635000070350000f43500000c36000066360000da360000e0360000ee36000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 1073}
+    m_SelectedIDs: b82d0000
+    m_LastClickedID: 11704
+    m_ExpandedIDs: 00000000b62a0000862b0000082d0000b42e0000043000009a310000c8310000dc320000f0340000703500007a350000fe3500001636000070360000e4360000ea360000f836000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -365,7 +365,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b22a0000822b0000042d0000ae2e0000fe2f000094310000d4320000e63400006635000070350000f43500000c36000066360000da360000e0360000ee360000
+    m_ExpandedIDs: 00000000b62a0000862b0000082d0000b42e0000043000009a310000c8310000dc320000f0340000703500007a350000fe3500001636000070360000e4360000ea360000f8360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -392,8 +392,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000823b000068580000
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000823b00006858000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -446,7 +446,7 @@ MonoBehaviour:
     y: 100
     width: 331
     height: 699
-  m_ScrollPosition: {x: 0, y: 26.955078}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
@@ -481,9 +481,9 @@ MonoBehaviour:
     height: 358
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3664f5ff
-    m_LastClickedID: -695242
-    m_ExpandedIDs: 9cfaffff9efbffffa0fbffff000000003e3a00008c3a0000e83a0000b83b0000ae3c0000fc3c0000c63e0000923f0000
+    m_SelectedIDs: f83b0000
+    m_LastClickedID: 15352
+    m_ExpandedIDs: a0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -538,9 +538,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.9661774, y: 2.3887854, z: 7.5339227}
+    m_Target: {x: 0.6904966, y: 1.8689916, z: 5.199382}
     speed: 2
-    m_Value: {x: 0.9661774, y: 2.3887854, z: 7.5339227}
+    m_Value: {x: 0.6904966, y: 1.8689916, z: 5.199382}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -563,13 +563,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.0076526697, y: 0.20227247, z: -0.0015809009, w: 0.9792982}
+    m_Target: {x: -0.08038809, y: -0.14271626, z: 0.011630835, w: -0.9864252}
     speed: 2
-    m_Value: {x: 0.0076526697, y: 0.20227247, z: -0.0015809009, w: 0.9792982}
+    m_Value: {x: -0.08038809, y: -0.14271626, z: 0.011630834, w: -0.9864252}
   m_Size:
-    m_Target: 4.214669
+    m_Target: 2.0194538
     speed: 2
-    m_Value: 4.214669
+    m_Value: 2.0194538
   m_Ortho:
     m_Target: 0
     speed: 2
