@@ -36,6 +36,8 @@ namespace VRTK.Examples
             DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "BUTTON TWO", "pressed down", e);
             is_active = !is_active;
             audioCanvas.SetActive(is_active);
+            //Set Right Controller model back on
+
         }
 
         private void DoButtonTwoReleased(object sender, ControllerInteractionEventArgs e)

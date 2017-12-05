@@ -3,20 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FreezeTime : MonoBehaviour {
-
+    bool isHit;
 	// Use this for initialization
 	void Start () {
-		
+        isHit = false;
 	}
 
     // Update is called once per frame
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Katana")
+       if(collision.gameObject.tag != "Fruit")
         {
-            Debug.Log("Collision On SlowDown Object");
-            Time.timeScale = 0.0f;
+            isHit = true;
+            if(isHit)
+            {
+
+            }
+            Time.timeScale = 0f;
+            StartCoroutine(SlowTime());
         }
         
+    }
+    IEnumerator SlowTime()
+    {
+        yield return new WaitForSeconds(5f);
+        Time.timeScale = 1.0f;
     }
 }
