@@ -332,7 +332,10 @@
     <None Include="Assets\Asset Store\BLINDED_AM_ME package\Shaders\Portal.shader" />
     <None Include="Assets\Asset Store\BLINDED_AM_ME package\Shaders\burnThrough.shader" />
     <None Include="Assets\Asset Store\BLINDED_AM_ME package\Shaders\def.shader" />
+    <None Include="Assets\Asset Store\FREE Food Pack\Shaders\Food.shader" />
     <None Include="Assets\Asset Store\NInja_Weapon\Nija_weapon.txt" />
+    <None Include="Assets\Asset Store\Particle Attractor by Moonflower Carnivore\Particle Attractor documentation.txt" />
+    <None Include="Assets\Asset Store\Particle Attractor by Moonflower Carnivore\Shaders\Particles Additive Intensify.shader" />
     <None Include="Assets\Asset Store\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\Asset Store\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
     <None Include="Assets\Asset Store\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
