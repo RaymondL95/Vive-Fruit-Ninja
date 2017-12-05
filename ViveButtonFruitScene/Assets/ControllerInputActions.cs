@@ -3,15 +3,12 @@
     using UnityEngine;
     using System.Collections;
     using System.Collections.Generic;
-
+    using UnityEngine.UI;
     public class ControllerInputActions : MonoBehaviour
     {
-
-        int slicecount = 0;
         bool usingSpecialAbility = true;
         bool _TriggerIsPressed = false;
-        float fireRate = 0.5F;
-        float nextFire = 0.0F;
+        public Slider _slider;
 
         public float TimeToKillSphere;
         public float TimeToSpawnSphere;
@@ -19,11 +16,10 @@
 		[SerializeField] private GameObject LeftController;
         [SerializeField] private GameObject Sphere;
 		private void Awake(){
-			//LeftController = GetComponent<SwordCutter> ();
-			Debug.Log ("Hello I Am Awake");
 		}
         private void Start()
         {
+           
             if (GetComponent<VRTK_ControllerEvents>() == null)
             {
                 VRTK_Logger.Error(VRTK_Logger.GetCommonMessage(VRTK_Logger.CommonMessageKeys.REQUIRED_COMPONENT_MISSING_FROM_GAMEOBJECT, "VRTK_ControllerEvents_ListenerExample", "VRTK_ControllerEvents", "the same"));
@@ -322,33 +318,15 @@
             Instantiate(Sphere, this.transform.position, this.transform.rotation);
 			Destroy(Sphere, TimeToKillSphere);
         }
+
         private void Update()
         {
-            //Check if Trigger is pressed and Meter is Full
-            //  Debug.Log(LeftController.GetComponent<SwordCutter>().GetSpecialAbility());
-            // LeftController.GetComponent<SwordCutter>().SetSpecialAbility(true);
-
-            if(LeftController.GetComponent<SwordCutter>().GetSpecialAbility() == true)
-            {
-               // Debug.Log("Left controller special ability. " + LeftController.GetComponent<SwordCutter>().GetSpecialAbility());
-            }
-            //
-
-            //Debug.Log("Right controller special ability. " + RightController.GetComponent<SwordCutter>().GetSpecialAbility());
-
-    //        if (LeftController.GetComponent<SwordCutter>().slider.value == 1f)
-    //        {
-				////We have to check if slider is equal to 1 here again even though swordcutter set to true already
-    //            LeftController.GetComponent<SwordCutter>().SetSpecialAbility(true);
-    //        }
+           
             if (_TriggerIsPressed && LeftController.GetComponent<SwordCutter>().GetSpecialAbility() )
             {
-
-                Debug.Log("This is never called!!");
-
 				LeftController.GetComponent<SwordCutter>().SetSpecialAbility(false);
 				//Use Special Ability then reset slider.
-				LeftController.GetComponent<SwordCutter> ().slider.value = 0f;
+				_slider.value = 0f;
               // If Trigger is Pressed && Meter is Full Count to TimeToSpawnSphere.
                 float current_time = Time.time;
                 Debug.Log(current_time);

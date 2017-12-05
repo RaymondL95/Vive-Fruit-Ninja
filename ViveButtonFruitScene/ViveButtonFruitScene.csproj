@@ -616,6 +616,8 @@
     <Compile Include="Assets\Scripts\FollowTransform.cs" />
     <Compile Include="Assets\Scripts\FPSDisplay.cs" />
     <Compile Include="Assets\Scripts\Front Facing UI\Countdown.cs" />
+    <Compile Include="Assets\Scripts\Front Facing UI\SliceCountEvent.cs" />
+    <Compile Include="Assets\Scripts\Front Facing UI\SliderEvent.cs" />
     <Compile Include="Assets\Scripts\Fruit.cs" />
     <Compile Include="Assets\Scripts\FruitScript.cs" />
     <Compile Include="Assets\Scripts\FruitSpawner.cs" />
@@ -625,7 +627,6 @@
     <Compile Include="Assets\Scripts\MirrorCamera.cs" />
     <Compile Include="Assets\Scripts\NoClipMouseLook.cs" />
     <Compile Include="Assets\Scripts\ObjectManager.cs" />
-    <Compile Include="Assets\Scripts\PowerUp\Pause Time\FreezeTime.cs" />
     <Compile Include="Assets\Scripts\PowerUp\Suction\ObjectPuller.cs" />
     <Compile Include="Assets\Scripts\PowerUp\Suction\Suction.cs" />
     <Compile Include="Assets\Scripts\PowerUp\Suction\Suction2.cs" />

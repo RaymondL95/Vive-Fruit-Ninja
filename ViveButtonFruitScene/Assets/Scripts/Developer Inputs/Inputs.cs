@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class Inputs : MonoBehaviour {
-    [SerializeField] private SwordCutter sword;
+    [SerializeField] private Slider _slider;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,7 +13,7 @@ public class Inputs : MonoBehaviour {
 	void Update () {
         if (Input.GetKey("x"))
         {
-            sword.slider.value = 1f;
+            _slider.value = 1f;
         }
 	}
 }
