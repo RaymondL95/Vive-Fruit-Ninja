@@ -18,7 +18,7 @@
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.2.0f3</UnityVersion>
     <RootNamespace></RootNamespace>
-    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+    <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -27,8 +27,8 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;VRTK_DEFINE_SDK_STEAMVR;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_1_OR_NEWER;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_2_OR_NEWER;VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER</DefineConstants>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT;VRTK_DEFINE_SDK_STEAMVR;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_1_OR_NEWER;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_2_OR_NEWER;VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -37,8 +37,8 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;VRTK_DEFINE_SDK_STEAMVR;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_1_OR_NEWER;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_2_OR_NEWER;VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER</DefineConstants>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT;VRTK_DEFINE_SDK_STEAMVR;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_1_OR_NEWER;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_2_OR_NEWER;VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -216,12 +216,6 @@
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -608,7 +602,49 @@
     <Compile Include="Assets\Asset Store\VRTK\SDK\Ximmerse\SDK_XimmerseDefines.cs" />
     <Compile Include="Assets\Asset Store\VRTK\SDK\Ximmerse\SDK_XimmerseHeadset.cs" />
     <Compile Include="Assets\Asset Store\VRTK\SDK\Ximmerse\SDK_XimmerseSystem.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\ArcWaveform.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\AudioData.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\AudioEventListener.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\AudioFileEventListener.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\AudioRecorder.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\AudioSampler.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\CircleWaveform.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\ColorChange.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\CurveWaveform.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\DisableOnTime.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\LineWaveform.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\MaterialChange.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\MicrophoneInput.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\ObjectPositionWaveform.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\ObjectRotationWaveform.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\ObjectScaleWaveform.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\PadWaveform.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\PanelWaveform.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Core\SphereWaveform.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\Ball.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\BallLauncher.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\BeatBasedGame.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\CameraCircle.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\CameraMovement.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\CubeTarget.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\ObjectCircle.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\ObjectPooler.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\ObjectSphere.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\Orb.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\ParticleController.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\ParticleFrequencyEmitter.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\Ring.cs" />
+    <Compile Include="Assets\AudioVisualizer\Scripts\Miscellaneous\Rotate.cs" />
     <Compile Include="Assets\ControllerInputActions.cs" />
+    <Compile Include="Assets\KriptoFX\WeaponEffects\Scene\Other\WFX_RealtimeReflection.cs" />
+    <Compile Include="Assets\KriptoFX\WeaponEffects\Scene\Other\WFXDemoGUI.cs" />
+    <Compile Include="Assets\KriptoFX\WeaponEffects\Scene\WFX_FPS.cs" />
+    <Compile Include="Assets\KriptoFX\WeaponEffects\Scripts\PSMeshRendererUpdater.cs" />
+    <Compile Include="Assets\KriptoFX\WeaponEffects\Scripts\WFX_DistortionAndBloom.cs" />
+    <Compile Include="Assets\KriptoFX\WeaponEffects\Scripts\WFX_LightCurves.cs" />
+    <Compile Include="Assets\KriptoFX\WeaponEffects\Scripts\WFX_MeshMaterialEffect.cs" />
+    <Compile Include="Assets\KriptoFX\WeaponEffects\Scripts\WFX_Turbulence.cs" />
+    <Compile Include="Assets\KriptoFX\WeaponEffects\Scripts\WFXSpriteSheetAnimation.cs" />
     <Compile Include="Assets\Scripts\Audio Manager\AudioDelegates.cs" />
     <Compile Include="Assets\Scripts\Audio Manager\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Audio Manager\AudioManagerFunctions.cs" />
@@ -629,9 +665,11 @@
     <Compile Include="Assets\Scripts\HandCloseScript.cs" />
     <Compile Include="Assets\Scripts\HandModel.cs" />
     <Compile Include="Assets\Scripts\HelperMethods.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\UIController.cs" />
     <Compile Include="Assets\Scripts\MirrorCamera.cs" />
     <Compile Include="Assets\Scripts\NoClipMouseLook.cs" />
     <Compile Include="Assets\Scripts\ObjectManager.cs" />
+    <Compile Include="Assets\Scripts\PowerUp\ReduceMeter\MeterReset.cs" />
     <Compile Include="Assets\Scripts\PowerUp\Suction\ObjectPuller.cs" />
     <Compile Include="Assets\Scripts\PowerUp\Suction\Suction.cs" />
     <Compile Include="Assets\Scripts\PowerUp\Suction\Suction2.cs" />
@@ -682,6 +720,47 @@
     <None Include="Assets\Asset Store\VRTK\Scripts\Internal\Shaders\VRTK_OutlineBasic.shader" />
     <None Include="Assets\Asset Store\sryurikennset\Readme.txt" />
     <None Include="Assets\Asset Store\sryurikennset\Readmejp.txt" />
+    <None Include="Assets\AudioVisualizer\Materials\BlendTexture.shader" />
+    <None Include="Assets\AudioVisualizer\Materials\BlendTextureLit.shader" />
+    <None Include="Assets\AudioVisualizer\Resources\ARestfulTown.txt" />
+    <None Include="Assets\AudioVisualizer\Resources\AbandonedPlaces.txt" />
+    <None Include="Assets\AudioVisualizer\Resources\CelestialVisitor.txt" />
+    <None Include="Assets\AudioVisualizer\Resources\Energy.txt" />
+    <None Include="Assets\AudioVisualizer\Resources\FamilyFugh.txt" />
+    <None Include="Assets\AudioVisualizer\Resources\PopDance.txt" />
+    <None Include="Assets\AudioVisualizer\Resources\PopDanceLimited.txt" />
+    <None Include="Assets\AudioVisualizer\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+    <None Include="Assets\AudioVisualizer\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+    <None Include="Assets\AudioVisualizer\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+    <None Include="Assets\AudioVisualizer\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Readme.txt" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\Bloom\Resources\WFX_Bloom.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\Bloom\Resources\WFX_BloomAdditive.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\Bloom\Resources\WFX_Bloom_Inc.cginc" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFXBelndLight.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_Additive.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_Blended.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_DistortPerlin.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_DistortPerlinMobile.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_DistortionCutOut.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_DistortionCutOutMobile.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_DistortionParticles.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_Ghost.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_GhostMobile.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_GlowCutout.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_GlowCutoutGradient.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_Ice.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_IceMobile.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_InterpolatedAdditive.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_InterpolatedAdditiveLight.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_Multiply.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_Slime.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_SlimeMobile.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_WaterBlend.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_WaterBlendMobile.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_WaterDrops.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_WaterDropsMobile.shader" />
+    <None Include="Assets\KriptoFX\WeaponEffects\Shaders\WFX_WaterDropsSimple.shader" />
     <None Include="Assets\Materials\GS-Cube-VertexLit-Triplanar.shader" />
     <None Include="Assets\Materials\SlopeProjection.shader" />
     <None Include="Assets\Materials\Triplanar-Vertex-Color.shader" />

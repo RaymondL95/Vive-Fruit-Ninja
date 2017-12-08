@@ -78,8 +78,6 @@
 
         private void DoTriggerPressed(object sender, ControllerInteractionEventArgs e)
         {
-
-            // Put code here to do stuff ...
             DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", "pressed", e);
         }
 

@@ -26,7 +26,14 @@ public class SliderEvent : MonoBehaviour {
     {
         slider.value += .03f;
     }
-
+    public void setSliderValue(float newslidervalue)
+    {
+        slider.value = newslidervalue;
+    }
+    public float getSliderValue()
+    {
+        return slider.value;
+    }
     private void Update()
     {
         slider.value += _PassiveRegen * Time.deltaTime;
