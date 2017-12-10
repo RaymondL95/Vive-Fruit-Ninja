@@ -24,6 +24,7 @@ public class SliderEvent : MonoBehaviour {
     }
     void SliderAction()
     {
+        //oncollision with fruit increase slider.
         slider.value += .03f;
     }
     public void setSliderValue(float newslidervalue)

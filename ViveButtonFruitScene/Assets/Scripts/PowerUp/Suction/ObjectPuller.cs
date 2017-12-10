@@ -7,7 +7,7 @@ public class ObjectPuller : MonoBehaviour
 {
 		public float pullRadius = 2;
 		public float pullForce = 1;
-
+        public float _SuctionIgnoreFruitSize = 0.05f;
 		public void FixedUpdate() {
 		foreach (Collider collider in Physics.OverlapSphere(transform.position, pullRadius)) {
 				// calculate direction from target to me
@@ -15,8 +15,8 @@ public class ObjectPuller : MonoBehaviour
             {
                 Vector3 forceDirection = transform.position - collider.transform.position;
                 Renderer rend = collider.GetComponent<Renderer>();
-
-                if (collider.GetComponent<Rigidbody>() != null && rend.bounds.size.x > 0.3f)
+                Debug.Log("rendboundsize" + rend.bounds.size.x);
+                if (collider.GetComponent<Rigidbody>() != null && rend.bounds.size.x > _SuctionIgnoreFruitSize)
                 {
                     // apply force on target towards me
 

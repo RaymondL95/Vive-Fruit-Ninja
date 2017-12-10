@@ -5,6 +5,7 @@ using UnityEngine;
 public class FruitSpawner : MonoBehaviour {
 
     public GameObject[] fruitPrefab;
+    public float spawn_range = 1f;
 	// Use this for initialization
 	void Start () {
         StartCoroutine(SpawnFruit());
@@ -23,7 +24,7 @@ public class FruitSpawner : MonoBehaviour {
             temp.useGravity = true;
 
             Vector3 pos = transform.position;
-            pos.x += Random.Range(-1f, 1f);
+            pos.x += Random.Range(-spawn_range, spawn_range);
             go.transform.position = pos;
 
             yield return new WaitForSeconds(1f);
