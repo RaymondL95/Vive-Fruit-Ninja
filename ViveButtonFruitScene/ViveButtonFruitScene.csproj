@@ -736,7 +736,10 @@
     <Compile Include="Assets\Scripts\MirrorCamera.cs" />
     <Compile Include="Assets\Scripts\NoClipMouseLook.cs" />
     <Compile Include="Assets\Scripts\ObjectManager.cs" />
+    <Compile Include="Assets\Scripts\PowerUp\DoubleFruit\DoubleFruit.cs" />
     <Compile Include="Assets\Scripts\PowerUp\ReduceMeter\MeterReset.cs" />
+    <Compile Include="Assets\Scripts\PowerUp\Slowdown\CollisionSlowdown.cs" />
+    <Compile Include="Assets\Scripts\PowerUp\Slowdown\Slowdown.cs" />
     <Compile Include="Assets\Scripts\PowerUp\Suction\ObjectPuller.cs" />
     <Compile Include="Assets\Scripts\PowerUp\Suction\Suction.cs" />
     <Compile Include="Assets\Scripts\PowerUp\Suction\Suction2.cs" />

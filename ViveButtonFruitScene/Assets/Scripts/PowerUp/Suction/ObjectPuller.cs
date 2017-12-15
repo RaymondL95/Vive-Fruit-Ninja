@@ -15,7 +15,6 @@ public class ObjectPuller : MonoBehaviour
             {
                 Vector3 forceDirection = transform.position - collider.transform.position;
                 Renderer rend = collider.GetComponent<Renderer>();
-                Debug.Log("rendboundsize" + rend.bounds.size.x);
                 if (collider.GetComponent<Rigidbody>() != null && rend.bounds.size.x > _SuctionIgnoreFruitSize)
                 {
                     // apply force on target towards me

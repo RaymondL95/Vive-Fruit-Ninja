@@ -7,17 +7,22 @@ using UnityEngine.UI;
 public class SwordCutter : MonoBehaviour {
     public delegate void SliceAction();
     public static event SliceAction onSliced;
+    public AudioSource slicesound;
     public Material capMaterial;
 
     private bool haveSpecialAbility = false;
 	bool usingSpecialAbility = false;
 
+    private void Start()
+    {
+        slicesound = GetComponent<AudioSource>();
+    }
     private void OnCollisionEnter(Collision collision)
     {
         //Check for all subscribed events
         onSliced.Invoke();
+        slicesound.Play();
 
-     
         GameObject victim = collision.collider.gameObject;
         GameObject[] pieces = BLINDED_AM_ME.MeshCut.Cut(victim, transform.position, transform.right, capMaterial);
         if(!pieces[1].GetComponent<Rigidbody>())
