@@ -14,22 +14,19 @@ public class DoubleFruit : MonoBehaviour {
             SingleFruitTimer = 0f;
             Debug.Log("Banana Collision");
             StartAction = true;
-            fruitspawner.setDoubleFruit(true);
+            fruitspawner.setDoubleFruit(StartAction);
+            StartCoroutine(BuffDuration());
         }
     }
-    private void Update()
+    IEnumerator BuffDuration()
     {
-        if (StartAction)
-        {
-            SingleFruitTimer += Time.time;
-            Debug.Log(SingleFruitTimer);
-            if(SingleFruitTimer >= DoubleFruitDuration)
-            {
-            //    StartAction = !StartAction;
-                fruitspawner.setDoubleFruit(false);
-            }
-        }
-        
+        yield return new WaitForSeconds(DoubleFruitDuration);
+        StartAction = false;
+        fruitspawner.setDoubleFruit(StartAction);
     }
+   
+        
+    
+  
 
 }

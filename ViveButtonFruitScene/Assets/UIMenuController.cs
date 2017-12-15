@@ -6,6 +6,7 @@ namespace VRTK.Examples
     public class UIMenuController : MonoBehaviour
     {
         public GameObject audioCanvas;
+        public GameObject rightKatana;
         bool is_active = false;
 
         private void Start()
@@ -36,6 +37,7 @@ namespace VRTK.Examples
             DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "BUTTON TWO", "pressed down", e);
             is_active = !is_active;
             audioCanvas.SetActive(is_active);
+            rightKatana.SetActive(is_active);
             //Set Right Controller model back on
 
         }
