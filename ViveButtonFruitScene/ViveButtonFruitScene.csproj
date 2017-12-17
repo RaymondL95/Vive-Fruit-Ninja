@@ -743,8 +743,8 @@
     <Compile Include="Assets\Scripts\pressableButton.cs" />
     <Compile Include="Assets\Scripts\RandomMover.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
+    <Compile Include="Assets\Scripts\Score\SliceScoreManager.cs" />
     <Compile Include="Assets\Scripts\Score\YourScore.cs" />
-    <Compile Include="Assets\Scripts\SliceCountTracker.cs" />
     <Compile Include="Assets\Scripts\SwordCutter.cs" />
     <Compile Include="Assets\SphereSpawner.cs" />
     <Compile Include="Assets\UIMenuController.cs" />

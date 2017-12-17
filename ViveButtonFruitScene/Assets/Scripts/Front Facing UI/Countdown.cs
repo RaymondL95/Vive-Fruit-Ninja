@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Countdown : MonoBehaviour {
     Text Countdown1;
+    SliceCountEvent slicecountevent;
     public int countfrom = 99;
 	// Use this for initialization
 	void Start () {

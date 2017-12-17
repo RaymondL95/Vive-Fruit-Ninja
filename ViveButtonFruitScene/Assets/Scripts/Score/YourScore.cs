@@ -4,12 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class YourScore : MonoBehaviour {
-    SliceCountTracker slicecounttracker;
+    SliceScoreManager slicecounttracker;
+    GameObject SliceManager;
     Text scoretxt;
     int finalslicecount;
 	// Use this for initialization
 	void Start () {
-        finalslicecount = slicecounttracker.slices;
+        if (GameObject.Find("SliceCountTracker"))
+        {
+            SliceManager = GameObject.Find("SliceCountTracker");
+        }
+        slicecounttracker = SliceManager.GetComponent<SliceScoreManager>();
+        finalslicecount = slicecounttracker.getFinalSliceCount();
         scoretxt = GetComponent<Text>();
         WhatsMyScore(finalslicecount);
 	}
@@ -23,15 +29,16 @@ public class YourScore : MonoBehaviour {
         Debug.Log("Whats my score running");
         if(finalslicecount <= 100)
         {
-            scoretxt.text = "You sliced" + finalslicecount + " times. You can do better than that!";
+            scoretxt.text = "You sliced " + finalslicecount + " times. You can do better than that!";
         }
         else if(finalslicecount >100 && finalslicecount < 500)
         {
-            scoretxt.text = "You sliced" + finalslicecount + " times. Hey that's pretty good!";
+            scoretxt.text = "You sliced " + finalslicecount + " times. Hey that's pretty good!";
         }
         else
         {
-            scoretxt.text = "You sliced" + finalslicecount + " times. ARE YOU A BLENDER?";
+            scoretxt.text = "You sliced " + finalslicecount + " times. ARE YOU A BLENDER?";
         }
     }
+    
 }

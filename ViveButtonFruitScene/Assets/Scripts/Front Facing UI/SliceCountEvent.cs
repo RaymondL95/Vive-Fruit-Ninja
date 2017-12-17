@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class SliceCountEvent : MonoBehaviour {
-    public int slicecount = 0;
+     int slicecount = 0;
     Text sliceText;
     private void OnEnable()
     {
