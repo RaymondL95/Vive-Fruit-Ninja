@@ -728,6 +728,7 @@
     <Compile Include="Assets\Scripts\HelperMethods.cs" />
     <Compile Include="Assets\Scripts\MainMenu\CollisionScene.cs" />
     <Compile Include="Assets\Scripts\MainMenu\QuitGame.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\SpinFood.cs" />
     <Compile Include="Assets\Scripts\MainMenu\UIController.cs" />
     <Compile Include="Assets\Scripts\MirrorCamera.cs" />
     <Compile Include="Assets\Scripts\NoClipMouseLook.cs" />
