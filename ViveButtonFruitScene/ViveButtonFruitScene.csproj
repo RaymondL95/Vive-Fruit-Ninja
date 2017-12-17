@@ -726,6 +726,8 @@
     <Compile Include="Assets\Scripts\HandCloseScript.cs" />
     <Compile Include="Assets\Scripts\HandModel.cs" />
     <Compile Include="Assets\Scripts\HelperMethods.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\CollisionScene.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\QuitGame.cs" />
     <Compile Include="Assets\Scripts\MainMenu\UIController.cs" />
     <Compile Include="Assets\Scripts\MirrorCamera.cs" />
     <Compile Include="Assets\Scripts\NoClipMouseLook.cs" />
