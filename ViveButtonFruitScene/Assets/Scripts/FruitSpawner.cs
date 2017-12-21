@@ -23,8 +23,8 @@ public class FruitSpawner : MonoBehaviour {
                 GameObject go1 = Instantiate(fruitPrefab[Random.Range(0, fruitPrefab.Length)]);
                 Rigidbody temp1 = go1.GetComponent<Rigidbody>();
 
-                temp1.velocity = new Vector3(0f, 7f, .7f);
-                temp1.angularVelocity = new Vector3(Random.Range(-7f, 7f), 0f, Random.Range(-7f, 7f));
+                temp1.velocity = new Vector3(0f, 5f, -.5f);
+                temp1.angularVelocity = new Vector3(Random.Range(-1f, 1f), 0f, Random.Range(-1f, 1f));
                 temp1.useGravity = true;
 
                 Vector3 pos1 = transform.position;
@@ -34,8 +34,8 @@ public class FruitSpawner : MonoBehaviour {
                 GameObject go2 = Instantiate(fruitPrefab[Random.Range(0, fruitPrefab.Length)]);
                 Rigidbody temp2 = go2.GetComponent<Rigidbody>();
 
-                temp2.velocity = new Vector3(0f, 5f, .5f);
-                temp2.angularVelocity = new Vector3(Random.Range(-2f, 2f), 0f, Random.Range(-2f, 2f));
+                temp2.velocity = new Vector3(0f, 5f, -.5f);
+                temp2.angularVelocity = new Vector3(Random.Range(-1f, 1f), 0f, Random.Range(-1f, 1f));
                 temp2.useGravity = true;
 
                 Vector3 pos2 = transform.position;
@@ -47,8 +47,8 @@ public class FruitSpawner : MonoBehaviour {
                 GameObject go = Instantiate(fruitPrefab[Random.Range(0, fruitPrefab.Length)]);
                 Rigidbody temp = go.GetComponent<Rigidbody>();
 
-                temp.velocity = new Vector3(0f, 5f, .5f);
-                temp.angularVelocity = new Vector3(Random.Range(-2f, 2f), 0f, Random.Range(-2f, 2f));
+                temp.velocity = new Vector3(0f, 5f, -.5f);
+                temp.angularVelocity = new Vector3(Random.Range(-1f, 1f), 0f, Random.Range(-1f, 1f));
                 temp.useGravity = true;
 
                 Vector3 pos = transform.position;

@@ -40,6 +40,6 @@ public class SliceScoreManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(_Slices);
+       
 	}
 }

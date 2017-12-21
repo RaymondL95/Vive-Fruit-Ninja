@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViveButtonFruitScene", "ViveButtonFruitScene.csproj", "{70D39F80-59D6-9611-0EDC-3C1CBB42E426}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViveButtonFruitScene.Plugins", "ViveButtonFruitScene.Plugins.csproj", "{F36A4D28-B86A-2209-B1D3-AA90138C4A5E}"
