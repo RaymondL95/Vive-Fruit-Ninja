@@ -34,7 +34,6 @@ public class FruitSpawner : MonoBehaviour {
                 go1.transform.position = pos1;
 
                 SpawnExplosion();
-                _Audi.Play();
 
                 GameObject go2 = Instantiate(fruitPrefab[Random.Range(0, fruitPrefab.Length)]);
                 Rigidbody temp2 = go2.GetComponent<Rigidbody>();
@@ -48,7 +47,6 @@ public class FruitSpawner : MonoBehaviour {
                 go2.transform.position = pos2;
 
                 SpawnExplosion();
-                _Audi.Play();
             }
             else
             {
@@ -63,7 +61,6 @@ public class FruitSpawner : MonoBehaviour {
                 pos.x += Random.Range(-spawn_range, spawn_range);
                 go.transform.position = pos;
                 SpawnExplosion();
-                _Audi.Play();
             }
             yield return new WaitForSeconds(Random.Range(1f,3f));
         }
@@ -74,6 +71,7 @@ public class FruitSpawner : MonoBehaviour {
         GameObject instance1 = Instantiate(Resources.Load("Fire_Explosion_01") as GameObject);
         instance1.transform.position = transform.position;
         Destroy(instance1, 1f);
+        _Audi.Play();
     }
     public void setDoubleFruit(bool newFruit)
     {

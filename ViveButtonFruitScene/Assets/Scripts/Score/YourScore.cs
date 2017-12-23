@@ -18,6 +18,7 @@ public class YourScore : MonoBehaviour {
         finalslicecount = slicecounttracker.getFinalSliceCount();
         scoretxt = GetComponent<Text>();
         WhatsMyScore(finalslicecount);
+        slicecounttracker.setFinalSliceCount();
 	}
 	
 	// Update is called once per frame
@@ -39,6 +40,7 @@ public class YourScore : MonoBehaviour {
         {
             scoretxt.text = "You sliced " + finalslicecount + " times. ARE YOU A BLENDER?";
         }
+
     }
     
 }

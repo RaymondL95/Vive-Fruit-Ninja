@@ -34,6 +34,11 @@ public class SliceScoreManager : MonoBehaviour {
     {
         return _Slices;
     }
+
+    public void setFinalSliceCount()
+    {
+        _Slices = 0;
+    }
     void Start () {
 		
 	}

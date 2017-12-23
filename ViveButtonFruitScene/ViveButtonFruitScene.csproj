@@ -651,6 +651,7 @@
     <Compile Include="Assets\AudioVisualizer\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
     <Compile Include="Assets\AudioVisualizer\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
     <Compile Include="Assets\AudioVisualizer\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+    <Compile Include="Assets\CannonController.cs" />
     <Compile Include="Assets\ControllerInputActions.cs" />
     <Compile Include="Assets\KriptoFX\WeaponEffects\Scene\Other\WFX_RealtimeReflection.cs" />
     <Compile Include="Assets\KriptoFX\WeaponEffects\Scene\Other\WFXDemoGUI.cs" />
